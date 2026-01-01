@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white) ![License: MIT](https://img.shields.io/badge/License-MIT-green) ![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)
 
-**RudyTime – Local Time Intelligence Tool for Linux**
+**RudyTime  Local Time Intelligence Tool for Linux**
 
 RudyTime is a simple yet powerful tool to track how you spend your time on your Linux machine. It monitors which applications you use, for how long, and gives **daily & weekly summaries** with a stylish, colorful terminal UI.  
 Built for Linux users from beginners to pros who want insight into their productivity.
@@ -97,10 +97,14 @@ RudyTime/
 │
 └── __pycache__/             # Python cache (auto-generated)
 
+
+```
+
+
 🤝 Contributing
 
 Pull requests, issues, and suggestions are welcome!
-Help us make RudyTime more intuitive, beautiful, and productivity-friendly.
+Help us make RudyTime more intuitive, beautiful, and productivityfriendly;).
 
 Check CONTRIBUTING.md
 for guidelines.
@@ -109,9 +113,11 @@ for guidelines.
 Made 100% by Rudy Cooper (@RudySilver)
 📜 License
 
-MIT License – Use it, modify it, share it, but keep building.
+MIT License  Use it, modify it, share it, but keep building.
 💡 Motivation
 
-“Time is your most valuable asset. RudyTime helps you see where it goes so you can take control of it.”
 
-⭐ Star the repo, fork it, and improve your productivity with us!
+“Time is your most valuable asset. RudyTime helps you see where it goes so you can take control of it;).”
+
+
+**⭐ Star the repo, fork it, and improve your productivity with us!**
