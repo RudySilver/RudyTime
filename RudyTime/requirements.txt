@@ -1,3 +1,15 @@
-colorama>=0.4.6
-wcwidth>=0.2.6
-
+# Optional / development dependencies.
+# Runtime strictly requires only 'colorama'. The rest are optional for future features.
+colorama
+wcwidth
+nltk
+joblib
+regex
+mergedeep
+watchdog
+lunr
+mkdocs
+pyyaml-env-tag
+argcomplete
+userpath
+livereload
