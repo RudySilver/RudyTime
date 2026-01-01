@@ -1,52 +1,53 @@
-RudyTime
+# 🕒 RudyTime
 
-🕒 RudyTime – Local Time Intelligence Tool for Linux
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white) ![License: MIT](https://img.shields.io/badge/License-MIT-green) ![Linux](https://img.shields.io/badge/Linux-Compatible-brightgreen)
 
-RudyTime is a simple yet powerful tool to track how you spend your time on your Linux machine. It monitors which applications you use, for how long, and gives you daily & weekly summaries with a stylish, colorful terminal UI.
-Built for any Linux user, from beginners to pros, who want insight into their productivity.
+**RudyTime – Local Time Intelligence Tool for Linux**
 
-Features
+RudyTime is a simple yet powerful tool to track how you spend your time on your Linux machine. It monitors which applications you use, for how long, and gives **daily & weekly summaries** with a stylish, colorful terminal UI.  
+Built for Linux users from beginners to pros who want insight into their productivity.
 
-📊 Track application usage: Daily & weekly summaries
+---
 
-🎨 Stylish terminal UI: Colored tables, usage bars, emojis
+## 🚀 Features
 
-⚡ Fast & local: Everything runs offline, nothing is sent
+- 📊 **Track application usage:** Daily & weekly summaries  
+- 🎨 **Stylish terminal UI:** Colored tables, usage bars, emojis  
+- ⚡ **Fast & local:** Everything runs offline, nothing is sent  
+- 🛠️ **Easy to install:** One script installs everything and makes it runnable globally  
+- 🖥️ **Works everywhere:** Start, stop, check status, or view reports from anywhere in your terminal  
+- 🧹 **Data management:** Purge old usage data anytime  
 
-🛠️ Easy to install: One script installs everything and makes it runnable globally
+---
 
-🖥️ Works everywhere: Start, stop, check status, or view reports from anywhere in your terminal
-
-🧹 Data management: Purge old usage data anytime
-
-Installation
+## 🛠️ Installation
 
 Clone the repository:
 
+```bash
 git clone https://github.com/RudySilver/RudyTime
 cd RudyTime
-
 
 Run the installer:
 
 bash install.sh
 
+✅ This will:
 
-This will:
+    Copy the RudyTime Python package to ~/.local/lib
 
-Copy the RudyTime Python package to ~/.local/lib
+    Copy the main executable RudyTime.py to ~/.local/bin/RudyTime
 
-Copy the main executable RudyTime.py to ~/.local/bin/RudyTime
+    Set up your PYTHONPATH so the package works globally
 
-Set up your PYTHONPATH so the package works globally
+    Check for required dependencies (xdotool, xprintidle) and install them if missing
 
-Check for required dependencies (xdotool, xprintidle) and install them if missing
-
-After installation, you can start tracking your time with:
+Start tracking your time:
 
 RudyTime start
 
-Usage
+📚 Usage
+
 RudyTime start      # Start tracking
 RudyTime stop       # Stop tracking
 RudyTime status     # Check tracker status
@@ -55,8 +56,7 @@ RudyTime week       # Show weekly summary
 RudyTime purge      # Delete all stored usage data
 RudyTime --version  # Show RudyTime version
 
-
-Example Output – Daily Summary:
+Example – Daily Summary
 
 ╔═════════════════════════════════════════════╗
 ║   🕒 RudyTime Daily Summary (2026-01-01)    ║
@@ -69,22 +69,20 @@ Example Output – Daily Summary:
 ║ caja 📂            ║ 0 min ║ ░░░░░░░░░░░░░░░░░ ║
 ╚════════════════════╩═══════╩═══════════════════╝
 
+All data is stored locally:
+~/.local/share/rudytime – nothing is sent anywhere, your privacy is protected.
+⚙️ Requirements
 
-All data is stored locally in:
-~/.local/share/rudytime
-Nothing is sent anywhere. Your privacy is protected.
+    Python 3.8+
 
-Requirements
+    Linux-based system (Parrot OS, Ubuntu, Debian, Kali, etc.)
 
-Python 3.8+
+    Optional but recommended: xdotool and xprintidle (for active window tracking & idle detection)
 
-Linux-based system (Parrot OS, Ubuntu, Debian, Kali, etc.)
+    The installer will automatically check/install them.
 
-Optional but recommended: xdotool and xprintidle (for active window tracking and idle detection)
+📂 Directory Structure
 
-The installer will automatically check/install them.
-
-Directory Structure
 RudyTime/
 │
 ├── RudyTime.py              # Main executable
@@ -99,21 +97,21 @@ RudyTime/
 │
 └── __pycache__/             # Python cache (auto-generated)
 
-Contributing
+🤝 Contributing
 
 Pull requests, issues, and suggestions are welcome!
-Help us make RudyTime more intuitive, beautiful, and productive-friendly.
+Help us make RudyTime more intuitive, beautiful, and productivity-friendly.
 
-Credits
+Check CONTRIBUTING.md
+for guidelines.
+💎 Credits
 
-Made 100% by Rudy Cooper (@RudySilver).
-
-License
+Made 100% by Rudy Cooper (@RudySilver)
+📜 License
 
 MIT License – Use it, modify it, share it, but keep building.
-
-Motivation
+💡 Motivation
 
 “Time is your most valuable asset. RudyTime helps you see where it goes so you can take control of it.”
 
-💡 Star ⭐ the repo, fork it, and improve your productivity with us!
+⭐ Star the repo, fork it, and improve your productivity with us!
