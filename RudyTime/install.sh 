@@ -1,0 +1,46 @@
+#!/bin/bash
+
+echo "[+] Installing RudyTime..."
+
+# Directories
+LIB_DIR="$HOME/.local/lib/RudyTime"
+BIN_DIR="$HOME/.local/bin"
+CLI="$BIN_DIR/RudyTime"
+
+# Create directories if missing
+mkdir -p "$LIB_DIR"
+mkdir -p "$BIN_DIR"
+
+# Copy Python package
+cp -r RudyTime/* "$LIB_DIR/"
+
+# Copy CLI
+cp RudyTime.py "$CLI"
+
+# Make CLI executable
+chmod +x "$CLI"
+
+# Add PYTHONPATH to bashrc if not already present
+if ! grep -q "export PYTHONPATH=\$HOME/.local/lib:\$PYTHONPATH" "$HOME/.bashrc"; then
+    echo 'export PYTHONPATH=$HOME/.local/lib:$PYTHONPATH' >> "$HOME/.bashrc"
+    echo "[+] Added PYTHONPATH to ~/.bashrc"
+fi
+
+# Install Python dependencies
+if command -v pip &> /dev/null; then
+    echo "[+] Installing Python dependencies..."
+    pip install --user -r requirements.txt
+else
+    echo "[!] pip not found. Please install Python3 pip."
+fi
+
+# Check for system dependencies
+for cmd in xdotool xprintidle; do
+    if ! command -v $cmd &> /dev/null; then
+        echo "[!] Warning: $cmd not installed. Some features may fail."
+    fi
+done
+
+echo "[+] RudyTime installation complete!"
+echo "Run: RudyTime start"
+
