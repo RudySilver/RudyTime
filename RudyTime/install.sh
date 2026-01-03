@@ -92,3 +92,4 @@ if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
   echo "Added ~/.local/bin to PATH in ~/.profile"
 fi
 echo "Installation complete. Use 'RudyTime start' to begin tracking."
+echo "Don't Forget to give the ripo a sexy star"
